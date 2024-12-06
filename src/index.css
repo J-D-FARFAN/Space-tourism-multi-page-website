@@ -1,0 +1,51 @@
+@font-face {
+    font-family: Barlow;
+    src: url(../public/Fonts/Barlow-Barlow_Condensed-Bellefair/Barlow/Barlow-Regular.ttf);
+}
+
+@font-face {
+    font-family: BarlowCondensed;
+    src: url(../public/Fonts/Barlow-Barlow_Condensed-Bellefair/Barlow_Condensed/BarlowCondensed-Regular.ttf);
+}
+
+@font-face {
+    font-family: Bellefair;
+    src: url(../public/Fonts/Barlow-Barlow_Condensed-Bellefair/Bellefair/Bellefair-Regular.ttf);
+}
+
+:root{
+    /*COLORS*/
+    --blue-900: #0B0D17;
+    --blue-300: #D0D6F9;
+    --white: #FFFFFF;
+
+    /*TYPOGRAPHY*/
+    --txt-preset-1: 144px;
+    --txt-preset-2: 100px;
+    --txt-preset-3: 56px;
+    --txt-preset-4: 32px;
+    --txt-preset-5: 28px;
+    --txt-preset-6: 16px;
+    --txt-preset-7: 14px;
+
+    --txtFontBarlow: Barlow;
+    --txtFontBarlowCondensed: BarlowCondensed;
+    --txtFontBellefair: Bellefair;
+
+
+    /*SPACING*/
+
+    --spacing-preset-1: 128px;
+    --spacing-preset-2: 96px;
+    --spacing-preset-3: 80px;
+    --spacing-preset-4: 64px;
+    --spacing-preset-5: 48px;
+    --spacing-preset-6: 40px;
+    --spacing-preset-7: 32px;
+    --spacing-preset-8: 24px;
+    --spacing-preset-9: 16px;
+    --spacing-preset-10: 12px;
+    --spacing-preset-11: 8px;
+    --spacing-preset-12: 4px;
+    --spacing-preset-13: 2px;
+}
