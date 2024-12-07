@@ -1,0 +1,97 @@
+@import url(../../index.css);
+
+.content__headerHomePage--and--navbarHomePage{
+    position: absolute;
+    width: 100%;
+    height: 136px;
+    padding-top: var(--spacing-preset-6);
+    top: 0;
+}
+
+.content__introductionHomePage{
+    height: 100%;
+    padding: var(--spacing-preset-1);
+
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+
+    .bx-introductionHomePage{
+        width: 540px;
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-preset-8);
+        color: var(--white);
+
+        .travel{
+            font-size: var(--txt-preset-5);
+            font-family: var(--txtFontBarlowCondensed);
+            letter-spacing: var(--spacing-preset-12);
+            color: var(--blue-300);
+        }
+
+        .title{
+            font-size: var(--txt-preset-1);
+            color: var(--white);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 500;
+        }
+    }
+
+    .bx-btnExploreMore{
+        position: relative;
+        width: 272px;
+        height: 272px;
+        background-color: var(--white);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--blue-900);
+        font-size: var(--txt-preset-4);
+        text-transform: uppercase;
+        z-index: 2;
+        cursor: pointer;
+        transition: .3s ease-in-out;
+
+        &::before{
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            background-color: hsl(0, 0%, 100%, 25%);
+            border-radius: 50%;
+            z-index: -2;
+            
+        }
+
+        &::after{
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            background-color: hsl(0, 0%, 100%, 75%);
+            border-radius: 50%;
+            z-index: -2;
+            
+        }
+
+        &:hover{
+            color: hsl(230, 35%, 7%, 50%);
+
+            &::before{animation: expandBoll 2s infinite;}
+            &::after{animation: expandBollSecond 3s infinite;}
+        }
+    }
+}
+
+@keyframes expandBoll {
+    from{width: 0; height: 0;}
+    to{width: 400px; height: 400px; opacity: 0;}
+}
+
+
+@keyframes expandBollSecond {
+    from{width: 0; height: 0;}
+    to{width: 430px; height: 430px; opacity: 0;}
+}

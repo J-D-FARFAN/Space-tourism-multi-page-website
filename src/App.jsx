@@ -1,9 +1,12 @@
 import "./App.css";
+import { HomePage } from "./assets/Home/home";
 
 function App() {
   return (
     <>
-      <h1>Hola mundo</h1>
+      <main className="content__allHomePage">
+        <HomePage />
+      </main>
     </>
   );
 }

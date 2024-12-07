@@ -27,6 +27,7 @@
     --txt-preset-5: 28px;
     --txt-preset-6: 16px;
     --txt-preset-7: 14px;
+    --txt-preset-8: 18px;
 
     --txtFontBarlow: Barlow;
     --txtFontBarlowCondensed: BarlowCondensed;
@@ -48,4 +49,21 @@
     --spacing-preset-11: 8px;
     --spacing-preset-12: 4px;
     --spacing-preset-13: 2px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    body{
+        height: 100vh;
+    }
+}
+
+.txt{
+    font-size: var(--txt-preset-8);
+    color: var(--blue-300);
+    line-height: 180%;
+    font-family: var(--txtFontBarlow);
 }

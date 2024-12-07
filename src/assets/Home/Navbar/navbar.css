@@ -1,0 +1,66 @@
+@import url(../../../index.css);
+
+.content__navBarHomePage{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding-left: var(--spacing-preset-4);
+
+    .bx--logo{
+        display: flex;
+        width: 48px;
+        height: 48px;
+    }
+
+    .navbarHomePage{
+        position: relative;
+        width: 736px;
+        height: 96px;
+        background-color: hsl(0, 0%, 100%, 5%);
+        backdrop-filter: blur(80px);
+
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding: 0 var(--spacing-preset-4);
+        gap: var(--spacing-preset-5);
+
+        .items-navbarHomePage{
+            position: relative;
+            color: var(--white);
+            font-size: var(--txt-preset-6);
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: var(--txtFontBarlowCondensed);
+            letter-spacing: var(--spacing-preset-13);
+            font-weight: 100;
+
+
+            &::before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 3px;
+                bottom: -38.55px;
+                pointer-events: none;
+                transition: .3s ease-in-out;
+            }
+
+            &:hover{
+                &::before{background-color: hsl(0, 0%, 100%, 50%);}
+            }
+
+            &.sectionActive{&::before{background-color: var(--white);}}
+        }
+
+        &::before{
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 1px;
+            background-color: hsl(0, 0%, 100%, 75%);
+            left: -63%;
+        }
+    }
+}
